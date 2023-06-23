@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Text_color: #6f2dbd;
+    --Text2_color: #a663cc; 
+    --base_color: #b298dc;
+    --bg2_color: #b9faf8;
+    --bg_color: #b8d0eb;
+}
+body{
+    background-color: var(--bg_color);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}   
+header{
+    background-color: var(--base_color);
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    width: 95vw;
+    height: 4em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: var(--Text_color);
+    padding: .2rem;
+
+    border-style: hidden;
+    border-right: 3px ;
+}
+#active{
+    background: var(--bg2_color);
+}
+nav a:hover{
+    border-style: outset;
+    border-width: 3px;
+    border-color: var(--Text2_color);
+}
+header img{
+    height: 90%;
+} 
+main{
+    padding: 2rem;
+
+    background-color: var(--base_color);
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brick1{
+    display: block;
+
+    width: 80vw;
+}
+.brickh1 h1,p{
+    color: var(--Text_color);
+    
+    height: 3rem;
+
+    text-align: center;
+}
+.brickh1 div{
+    width: 80vw;
+    height: 20vh;
+
+    background-image: url(/Images/woman.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#brickh2{
+    height: 30vw;
+    width: 80vw;
+
+    margin: 2rem 0 0 0;
+
+    display:flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+#brickh2 p{
+    height: 6rem;
+    width: 20rem;
+}
+#brickh2 img{
+    height: 90%;   
+}
+#bp2{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoPort{
+    height: 10em;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 3rem;
+
+    align-items: center;
+}
+.infoPort img{
+    height: 9em;
+
+    border-radius: 1rem;
+}
+.infoPort p{
+    width: 20rem;
+    
+    padding-left: 1rem;
+    border-left: solid #6f2dbd;
+}
+/*Contact*/
+.contactPre{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+}
+.contactPre img{
+    width: 55vw;
+}
+.contactPre div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contactPre p{
+    width: 35vw;
+    background-color: var(--base_color);
+}
+/*More Information*/
+table{
+    width: 30rem;
+    height: 8rem;
+
+    background: linear-gradient(white, rgb(214, 188, 188));
+} 
+tr,th,td{
+
+
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    
+    margin: .3rem
+}
+/*Benefits and tips*/
+#bp5{
+    width: 80vw;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    gap: 1rem;
+}
+.benefits, .tips{
+    display: flex;
+
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+.benefits img, .tips img{
+    width: 25vw;
+
+    border-radius: 1rem;
+}
+.benefits ol, .tips ol{
+    width: 25vw;
+}
+/*Raffle*/
+fieldset{
+    border: none;
+}
+.bp6{
+    width: 80vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#bp6_1{
+    width: 35vw;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#bp6_2{
+    width: 35vw;
+}
+iframe{
+    width: 100%;
+}
+form div{
+    margin: .5rem
+}
+form section{
+    display: flex;
+    justify-content: space-between;
+}
+fieldset p{
+    color: black;
+    text-justify: left;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+textarea{
+    width: 100%;
+}
+#submitButtom{
+    width: 3rem;
+}
+
+/*footer general*/
+footer{
+    position: fixed;
+    bottom: 0;
+
+    width: 55vw;
+    height: 1.5rem;
+    
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--base_color);
+
+    display: flex;
+    align-items: center;
+}
+footer>p{
+    height: 1rem;
+    text-align: center;
+    
+    width: 100%;
+}
+@media only screen and (max-width: 767px){
+    header{
+        height: fit-content;
+        width: 90vw;
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header img{
+        height: 3rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* General */
+    .brickh1 h1{
+        height: 4rem;
+    }
+    /* Index */
+    #brickh2{
+        padding: 1rem;
+        margin:.3rem;
+
+        display: flex;
+        flex-direction: column-reverse;
+        gap:1rem;
+    }
+    /* About Us */
+    #bp2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .infoPort{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .infoPort p{
+        height: fit-content;
+        border-top: solid #6f2dbd;
+        padding-top: 1rem;
+        border-left: none;
+        padding-left: 0;
+    }
+    /* Contact */
+    .contactPre img{
+        width: 100%;
+    }
+    /* More Info */
+    table{
+        width: 90%;
+    }
+    /* Benefits and Tips */
+    .benefits, .tips{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .benefits img, .tips img{
+        width: 100%;
+    }
+    /* Raffle */
+    .bp6{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #bp6_1, #bp6_2{
+        width: 80vw;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    /* Index */
+    /* About Us */
+    /* Contact */
+    /* More Info */
+    /* Benefits and Tips */
+    .benefits, .tips{
+        display: flex;
+    
+        justify-content: center;
+        gap: 5rem;
+        align-items: center;
+    }
+    .benefits img, .tips img{
+        width: 25vw;
+    
+        border-radius: 1rem;
+    }
+    /* Raffle */
+    .bp6{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #bp6_1, #bp6_2{
+        width: 80vw;
+    }
+    form{
+        /* display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; */
+    }
+    form div{
+        width: 47%;
+    }
+}

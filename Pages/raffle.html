@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindyTRAVEL | Raffle</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="shortcut icon" href="/Images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/Pages/aboutUs.html">About Us</a>
+            <a href="/Pages/contact.html">Contact</a>
+            <a href="/Pages/moreInformation.html">More information</a>
+            <a href="/Pages/benefitsAndTips.html">Benefits and tips</a>
+            <a href="#" id="active">Raffle</a>
+        </nav>
+        <img src="/Images/logo.png" alt="logo" title="MindyTRAVEL">
+    </header>
+    <main>
+        <div class="brickh1">
+            <h1>HOME</h1>
+        </div>
+    <div class="bp6">
+        <div id="bp6_1">
+            <h4>To participate you must be from Toronto, Canada</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369112.0097969312!2d-80.00188891464595!3d43.717041384874285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses!2sco!4v1687507929486!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="bp6_2">
+            <form action="">
+                <div>
+                    <label for="f_name">First Name</label>
+                    <input type="text" name="First Name" id="f_name" placeholder="i.e. Timmy" >
+                </div>
+                <div>
+                    <label for="l_name">Last Name</label>
+                    <input type="text" name="Last Name" id="l_name" placeholder="i.e. Turner">
+                </div>
+                <div>
+                    <label for="e_mail">E-Mail</label>
+                    <input type="text" name="E-mail" id="e_mail" placeholder="i.e. carlitos@chimichangas.com">
+                </div>
+                <div>
+                    <label for="country">Chose Country</label>
+                    <select name="destiny" id="country">
+                        <option value="Colombia">Colombia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Peru">Peru</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="flyDay">Chose Date</label>
+                    <input type="date" name="date" id="flyDay">
+                </div>
+                <fieldset>
+                    <p>Payment Options</p>
+                <div>
+                    <input type="radio" name="cash" id="cash">
+                    <label for="cash">Cash</label>
+                </div>
+                <div>    
+                    <input type="radio" name="Debit Card" id="debit_Card">
+                    <label for="debit_Card">Debit Card</label>
+                </div>    
+                <div>
+                    <input type="radio" name="Credit Card" id="credit_Card">
+                    <label for="credit_Card">Credit Card</label>
+                </div>
+                </fieldset>
+                <div>
+                    <label for="message">Message (Optional)</label>
+                    <textarea name="Message" id="message" cols="10" rows="10"></textarea>
+                </div>
+                <section>
+                <div>                     
+                    <input type="checkbox" name="termsConfirm" id="terms_c">
+                    <label for="terms_c">I accept terms and conditions...</label>
+                </div>             
+                    <input type="submit" value="Send" id="submitButtom">
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Created by: Guill3</p>
+    </footer>
+</body>
+</html>
